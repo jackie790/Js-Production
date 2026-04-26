@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J's Production </title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Prata&display=swap" rel="stylesheet">
+    <style>
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 9%;
+  background-color: #f1f1f1;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+}
+.nav-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+#background-image {
+    height: auto;
+    background: url('IMG_1996.jpg');
+    background-size: cover;
+    background-image: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    padding: 120px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Prata', serif;
+    font-size: 34px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+.hero p {
+    font-family: 'EB Garamond', serif;
+    margin: auto;
+    max-width: 600px;
+    text-align: center;
+}
+.section h2 {
+    font-family: 'Prata', serif;
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section p {
+    font-family: 'EB Garamond', serif;
+    margin: auto;
+    max-width: 600px;
+    line-height: center;
+}
+
+li a {
+  text-align: center;
+  display: block;
+  color: black;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: black;
+  color: white;
+}
+
+    .title {
+    font-family: 'Prata', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.title h1{
+    font-size: 64px;
+    letter-spacing: 4px;
+    margin: 0;
+}
+        body {
+            font-family: 'EB Garamond', serif;
+            color: #111;
+            background: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+    
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+
+
+        }
+        .btn {
+    padding: 12px 30px;
+    border: 1px solid black;
+    background-color: transparent;
+    letter-spacing: 2px;
+    font-family: 'EB Garamond', serif;
+    text-transform: uppercase;
+    cursor: pointer;
+        }
+
+        #background-image img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+        }
+
+
+        ul li {
+            float: center;
+}
+ form {
+           background-color: #5C5248;
+           color: white;
+          font-family: "EB Garamond", serif;
+          border: 2px solid #56381a;
+          padding: 50px;
+          max-width: 1600px;
+          margin: 0 auto;
+     }
+
+footer {
+        text-align: center;
+        padding: 40px;
+        font-size: 12px;
+     }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+        <div class="logo">J's</div>
+
+     <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#Key Value">PORTFOLIO</a></li>
+        <li><a href="#Deep Dive">ABOUT</a></li>
+        <li><a href="#Secondary CTA">CONTACT</a></li>
+     </ul>
+        </div>
+    </nav>
+
+    <section id="background-image">
+            <img src="IMG_1996.jpg" alt="woman posing">
+             <div class="title">
+            <h1>J's Production</h1>
+    </div>        
+    </section>
+<br>
+<br>
+
+<section id="Key Value" class="hero">
+    <h1>PHOTOGRAPHY THAT FEELS HONEST</h1>
+    <p>I turn real moments into art</p>
+</section>
+<br>
+<br>
+<br>
+<br>
+
+
+<section class="gallery">
+    <img src="photo.jpg" alt="A woman in a pink backless dress with long dark curly hair sitting, looking at herself in a mirror with a contemplative expression.">
+    <img src="IMG_3851.JPG" alt="A tranquil scene of an ocean with waves gently lapping against a rocky shore.">
+    <img src="beach.jpeg" alt="A serene beach scene with a calm ocean, soft sand, and a clear blue sky.">
+</section> 
+
+<section id="Deep Dive" class="section">
+    <a href="https://vsco.co/nicol-carias/gallery">
+    <button class="btn">VIEW PORTFOLIO</button>
+    </section>
+    </a>
+</section>
+
+<!-- Key Value Section -->
+    <section class="section">
+    <h1>Why My Photography Feels Honest</h1>
+
+    <div>
+        <h3>Pre-Shoot Vision Call</h3>
+        <p>Talk beforethe shoot, we'll discuss your vision and ensure we're on the same page.</p>
+    </div>
+
+    <div>
+        <h3>Personalized Locations</h3>
+        <p>I will help you find the perfect locations that match your vision and style.</p>
+    </div>
+    <br>
+
+<!-- Social Proof Section -->
+ <section class="section">
+    <h2>TRUSTED BY CLIENTS</h2>
+    <p class="testimonial">The photos felt real and authentic. Best experience!</p>
+        <p>- Emily R</p>
+        <p class="testimonial">J's photography captured the essence of our relationship in a way that felt so genuine. We couldn't be happier with the results!"</p>   
+        <p>- Sarah & Alex</p>  
+</div>
+<br>
+<br> 
+
+<section id="Secondary CTA">
+<a href="https://www.instagram.com/nicol.pixpro/?utm_source=ig_web_button_share_sheet">
+<button>Follow Us On Instagram</button>
+</a>
+<br>
+<br>
+<br>
+</section>
+ <form
+  action="https://formspree.io/f/xwvwadon"
+  method="POST"
+>
+    <h2>CONTACT</h2>
+  <label>
+    Name:
+    <input type="text" name="name">
+    </label>
+    <br>
+    <br>
+    <br>
+    Email Address:
+    <input type="email" name="email">
+  </label>
+  <br>
+  <br>
+  <br>
+  <div>
+  <label>
+    Message:
+    <textarea name="message"></textarea>
+  </label>
+  </div>
+  <br>
+  <br>
+  <br>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+<footer>
+    <p>
+        &copy; 2026 J's Production. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>
