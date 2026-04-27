@@ -149,21 +149,42 @@ body {
 ul li { 
     float: center; 
 } 
+/* FORM */
+.contact {
+  background: #f7f7f7;
+}
 
-form { 
-    background-color: #5C5248; 
-    color: white; 
-    font-family: "EB Garamond", serif; 
-    border: 2px solid #56381a; 
-    padding: 100px; 
-    margin: 0 auto; 
-     } 
+input, textarea {
+    font-family: "EB Garamond", serif;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  nav {
+    padding: 20px;
+  }
 
 footer { 
     text-align: center; 
     padding: 40px; 
     font-size: 12px; 
      } 
+    }
 </style> 
 </head> 
 <body> 
@@ -229,7 +250,7 @@ footer {
 
 <br> 
 <br>  
-<section id="Secondary CTA"> 
+<section id="Secondary CTA">
 <a href="https://www.instagram.com/nicol.pixpro/?utm_source=ig_web_button_share_sheet"> 
 <button>Follow Us On Instagram</button> 
 </a> 
@@ -238,39 +259,24 @@ footer {
 <br> 
 </section> 
 
-<form action="https://formspree.io/f/xwvwadon" method="POST"> 
-    <h2>CONTACT US</h2>
+<section class="section contact">
+  <h2>CONTACT</h2>
+  <form action="https://formspree.io/f/xwvwadon" method="POST">
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email" placeholder="Email">
+    <textarea name="message" placeholder="Message"></textarea>
     <br>
-  <label> 
-    Name: 
-    <input type="text" name="name"> 
-    </label> 
-    <br> 
-    <br> 
-    <br> 
-    Email Address: 
-    <input type="email" name="email"> 
-  </label> 
-  <br> 
-  <br> 
-  <br> 
-  <div> 
-  <label> 
-    Message: 
-    <textarea name="message"></textarea> 
-  </label> 
-  </div> 
-  <br> 
-  <br> 
-  <br> 
-  <!-- your other form fields go here --> 
-  <button type="submit">Send</button> 
-</form> 
+    <br>
+    <button class="btn" type="submit">SEND</button>
+  </form>
+</section>
 <footer> 
+<br>
+<br>
     <p> 
     &copy; 2026 J's Production. All Rights Reserved. 
     </p> 
 </footer> 
 
 </body> 
-</html> 
+</html>
